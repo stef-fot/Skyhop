@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Skyhop</string>
+    <string name="tap_to_fly">Tap to fly</string>
+    <string name="best_score">Best %1$d</string>
+    <string name="game_over">Game over</string>
+    <string name="score">Score</string>
+    <string name="best">Best</string>
+    <string name="new_best">New best!</string>
+    <string name="tap_to_play_again">Tap to play again</string>
+    <string name="paused">Paused</string>
+    <string name="tap_to_resume">Tap to resume</string>
+</resources>

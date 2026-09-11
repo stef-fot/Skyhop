@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10B5C39A0FD842636226709A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0598229BD2BD665CC2E3932 /* Assets.xcassets */; };
+		33E366561941F2A09C7CF512 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26C68DDFF6C0CB16A3A29333 /* Localizable.strings */; };
+		63A4D7D3748B0BE089EF6EE4 /* GameRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A263D99E2FB1C2BF2362501E /* GameRenderer.swift */; };
+		98EAE1C1138BCC11DBC3B203 /* SkyhopCore in Frameworks */ = {isa = PBXBuildFile; productRef = 18D1E4662FE8D87E8694A101 /* SkyhopCore */; };
+		A7D13DD1AD27F859BA0CB7F1 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2601EE012891C3F19D0FD04D /* GameView.swift */; };
+		B608BB83DFFE99CAA24B01E5 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453025FD4B5630EC92D8CC3C /* Palette.swift */; };
+		BB5DE5DD3C7A00260E968656 /* DisplayLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F09D88D928B767485A13F /* DisplayLink.swift */; };
+		CCE3B115841415886B9A2EC5 /* SkyhopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C9212F52ACFF3BC16006D /* SkyhopApp.swift */; };
+		DC70C953AEC9E7FC275440BC /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117A49957DFDD1EA7A9A68D /* GameViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0CC26A52FCB152EA83A7E705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1CD3AA5AA25CD0ED9555A7B1 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2601EE012891C3F19D0FD04D /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		2D7F09D88D928B767485A13F /* DisplayLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayLink.swift; sourceTree = "<group>"; };
+		453025FD4B5630EC92D8CC3C /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
+		492C9212F52ACFF3BC16006D /* SkyhopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyhopApp.swift; sourceTree = "<group>"; };
+		5117A49957DFDD1EA7A9A68D /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		5975A233B15B9E9C932E4944 /* Skyhop.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Skyhop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63DB5F10F62D5113BAF20289 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7F28F2D726044C0DE3B77BC0 /* SkyhopCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SkyhopCore; path = SkyhopCore; sourceTree = SOURCE_ROOT; };
+		A263D99E2FB1C2BF2362501E /* GameRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRenderer.swift; sourceTree = "<group>"; };
+		E0598229BD2BD665CC2E3932 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7AFEFD6C391F4F19E07D2629 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98EAE1C1138BCC11DBC3B203 /* SkyhopCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3759CF7C6D29DBB394D6546A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5975A233B15B9E9C932E4944 /* Skyhop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3ED5AE8C630EED706C77EA41 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				7F28F2D726044C0DE3B77BC0 /* SkyhopCore */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		8364DC96470F2F87662DF3B3 = {
+			isa = PBXGroup;
+			children = (
+				3ED5AE8C630EED706C77EA41 /* Packages */,
+				90671A9AAF02A19214A240F1 /* Skyhop */,
+				3759CF7C6D29DBB394D6546A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90671A9AAF02A19214A240F1 /* Skyhop */ = {
+			isa = PBXGroup;
+			children = (
+				E0598229BD2BD665CC2E3932 /* Assets.xcassets */,
+				2D7F09D88D928B767485A13F /* DisplayLink.swift */,
+				A263D99E2FB1C2BF2362501E /* GameRenderer.swift */,
+				2601EE012891C3F19D0FD04D /* GameView.swift */,
+				5117A49957DFDD1EA7A9A68D /* GameViewModel.swift */,
+				0CC26A52FCB152EA83A7E705 /* Info.plist */,
+				453025FD4B5630EC92D8CC3C /* Palette.swift */,
+				492C9212F52ACFF3BC16006D /* SkyhopApp.swift */,
+				26C68DDFF6C0CB16A3A29333 /* Localizable.strings */,
+			);
+			path = Skyhop;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BB23BE883C5DD3522FBF0A9 /* Skyhop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34C457C2FB3863C7FB01B9EF /* Build configuration list for PBXNativeTarget "Skyhop" */;
+			buildPhases = (
+				3188D57E528DB4602D8A8D03 /* Sources */,
+				EB71C4877519235EFB594DC1 /* Resources */,
+				7AFEFD6C391F4F19E07D2629 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Skyhop;
+			packageProductDependencies = (
+				18D1E4662FE8D87E8694A101 /* SkyhopCore */,
+			);
+			productName = Skyhop;
+			productReference = 5975A233B15B9E9C932E4944 /* Skyhop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47FB825E526C229DA8C13F7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					8BB23BE883C5DD3522FBF0A9 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 645EE267AF59767E11DE5511 /* Build configuration list for PBXProject "Skyhop" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				el,
+				en,
+			);
+			mainGroup = 8364DC96470F2F87662DF3B3;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F06CBAF4EEBBEAA92C4E692E /* XCLocalSwiftPackageReference "SkyhopCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3759CF7C6D29DBB394D6546A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BB23BE883C5DD3522FBF0A9 /* Skyhop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB71C4877519235EFB594DC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10B5C39A0FD842636226709A /* Assets.xcassets in Resources */,
+				33E366561941F2A09C7CF512 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3188D57E528DB4602D8A8D03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5DE5DD3C7A00260E968656 /* DisplayLink.swift in Sources */,
+				63A4D7D3748B0BE089EF6EE4 /* GameRenderer.swift in Sources */,
+				A7D13DD1AD27F859BA0CB7F1 /* GameView.swift in Sources */,
+				DC70C953AEC9E7FC275440BC /* GameViewModel.swift in Sources */,
+				B608BB83DFFE99CAA24B01E5 /* Palette.swift in Sources */,
+				CCE3B115841415886B9A2EC5 /* SkyhopApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		26C68DDFF6C0CB16A3A29333 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CD3AA5AA25CD0ED9555A7B1 /* el */,
+				63DB5F10F62D5113BAF20289 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A7D4B440403C5E2B95529B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Skyhop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.skyhop.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		71695FF9A5EA61E0BDAC8384 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		78015BB3F521FFEAD9020640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Skyhop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.skyhop.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CA949B793C163F7178F0C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34C457C2FB3863C7FB01B9EF /* Build configuration list for PBXNativeTarget "Skyhop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78015BB3F521FFEAD9020640 /* Debug */,
+				6A7D4B440403C5E2B95529B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		645EE267AF59767E11DE5511 /* Build configuration list for PBXProject "Skyhop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71695FF9A5EA61E0BDAC8384 /* Debug */,
+				9CA949B793C163F7178F0C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		F06CBAF4EEBBEAA92C4E692E /* XCLocalSwiftPackageReference "SkyhopCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = SkyhopCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		18D1E4662FE8D87E8694A101 /* SkyhopCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SkyhopCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 47FB825E526C229DA8C13F7D /* Project object */;
+}

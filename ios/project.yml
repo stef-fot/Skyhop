@@ -1,0 +1,62 @@
+# The generated Skyhop.xcodeproj is committed, so this is only needed if you add or move files:
+#   brew install xcodegen && xcodegen generate
+name: Skyhop
+options:
+  bundleIdPrefix: dev.skyhop
+  developmentLanguage: en
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+
+packages:
+  SkyhopCore:
+    path: SkyhopCore
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+
+targets:
+  Skyhop:
+    type: application
+    platform: iOS
+    sources:
+      - path: Skyhop
+    dependencies:
+      - package: SkyhopCore
+    info:
+      path: Skyhop/Info.plist
+      properties:
+        CFBundleDisplayName: Skyhop
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        UILaunchScreen:
+          UIColorName: LaunchBackground
+        UIRequiresFullScreen: true
+        UIStatusBarHidden: true
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+        # Allows CADisplayLink to run at 120 Hz on ProMotion iPhones.
+        CADisableMinimumFrameDurationOnPhone: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.skyhop.app
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        TARGETED_DEVICE_FAMILY: "1,2"
+        CODE_SIGN_STYLE: Automatic
+        ENABLE_PREVIEWS: YES
+
+schemes:
+  Skyhop:
+    build:
+      targets:
+        Skyhop: all
+    run:
+      config: Debug
+    archive:
+      config: Release

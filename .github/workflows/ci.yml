@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  android:
+    name: Android (unit tests + debug build)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: android
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: gradle/actions/setup-gradle@v4
+      - run: chmod +x gradlew # uploads through the web or API lose the executable bit
+      - run: ./gradlew :core:test :app:assembleDebug --stacktrace
+
+  ios:
+    name: iOS (unit tests + simulator build)
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Engine unit tests
+        working-directory: ios/SkyhopCore
+        run: swift test
+      - name: Build app
+        run: >
+          xcodebuild build
+          -project ios/Skyhop.xcodeproj
+          -scheme Skyhop
+          -destination 'generic/platform=iOS Simulator'
+          CODE_SIGNING_ALLOWED=NO

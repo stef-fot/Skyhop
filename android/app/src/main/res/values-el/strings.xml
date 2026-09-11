@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tap_to_fly">Πάτα για να πετάξεις</string>
+    <string name="best_score">Ρεκόρ %1$d</string>
+    <string name="game_over">Τέλος παιχνιδιού</string>
+    <string name="score">Σκορ</string>
+    <string name="best">Ρεκόρ</string>
+    <string name="new_best">Νέο ρεκόρ!</string>
+    <string name="tap_to_play_again">Πάτα για να ξαναπαίξεις</string>
+    <string name="paused">Παύση</string>
+    <string name="tap_to_resume">Πάτα για να συνεχίσεις</string>
+</resources>
